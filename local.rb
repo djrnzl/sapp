@@ -12,11 +12,11 @@ app = Rack::Builder.new do
 	use Rack::ShowExceptions
 
 	map '/static' do
-		run Rack::Directory.new '/home/djr/dropbox/djr.vps/www/djrsnot/public/static'
+		run Rack::Directory.new '/public/static'
 	end
 	
 	map '/images' do
-		run Rack::Directory.new '/home/djr/dropbox/djr.vps/www/djrsnot/public/images'
+		run Rack::Directory.new '/public/images'
 	end
 	
 	map '/' do
